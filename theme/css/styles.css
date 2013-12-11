@@ -1,0 +1,59 @@
+/*
+@mixin shiny-button {
+  @include background-image(linear-gradient(#8BA9BA 44%, #5E849C 55%));
+  @include border-radius(5px);
+  @include box-shadow(0 0 0 1px #c3c4c4);
+  border: 1px solid #adcfd7;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  margin: 5px;
+  text-decoration: none;
+}
+*/
+h2 {
+  font-size: 19px;
+  border: none;
+  color: #000;
+  padding-top: 15px;
+  /* --- "&" Parent Selector Exercise --- */ }
+  h2.exercise {
+    font-size: 16px;
+    border-top: 1px solid #666; }
+
+.title {
+  color: red; }
+
+.content {
+  background: #cccccc;
+  border: 15px solid red;
+  /*--- Example Using Sass Function --- */
+  border-radius: 22px;
+  color: #666;
+  padding: 20px;
+  /* --- Nesting Example Using Color Variables -- */ }
+  .content ul {
+    font-size: 16px;
+    color: purple; }
+    .content ul ul {
+      color: red; }
+
+p {
+  font-size: 1em;
+  /*--- Example Using Variables with "&" Parent Selectors --- */ }
+  p.small {
+    font-size: 10px; }
+  p.medium {
+    font-size: 17px; }
+  p.large {
+    font-size: 24px; }
+
+.green {
+  background-color: lime;
+  padding: 20px;
+  margin-top: 30px;
+  border: 5px solid green;
+  border-radius: 5px; }
+
+.white {
+  background: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.5); }

@@ -1,9 +1,61 @@
 @import "init";
 
+h2 {
+	font-size:19px;
+	border:none;
+	color:#000;
+	padding-top:15px;
+
+	/* --- "&" Parent Selector Exercise --- */
+	&.exercise {
+		font-size:16px;
+		border-top:1px solid #666;
+	}
+}
+
 .title {
   color: red;
 }
 .content {
-  background: light-grey;
-  height: 10em;
+  background: $light-grey;
+  border:15px solid red;
+  /*--- Example Using Sass Function --- */
+  border-radius: round(22.4px);
+  color:#666;
+  padding:20px;
+
+  /* --- Nesting Example Using Color Variables -- */
+  ul {
+  	font-size:16px;
+  	color: $list-color;
+
+  	ul {
+  		color: $subitem-color;
+  	}
+  }
 }
+
+p {
+	font-size:1em;
+
+	/*--- Example Using Variables with "&" Parent Selectors --- */
+	&.small {
+		font-size: $small-text;
+	}
+	&.medium {
+		font-size: $medium-text;
+	}
+	&.large {
+		font-size: $large-text;
+	}
+}
+
+.green {
+	@include green-block;
+}
+
+.white {
+    background:white(0.9);
+    color:black(0.5);
+}
+

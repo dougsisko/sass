@@ -10,7 +10,13 @@
 // Colors
 $text-color: #fc1127;
 $background-color: #ccc;
+$list-color: purple;
+$subitem-color: red;
+$light-grey: #ccc;
+$large-text: 24px;
+$medium-text: 17px;
+$small-text: 10px;
 
 // Partials to be shared with all .scss files.
-@import "compass";
+//@import "compass";
 @import "mixins";
