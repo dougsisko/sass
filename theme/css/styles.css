@@ -10,19 +10,26 @@
   text-decoration: none;
 }
 */
+/* line 3, ../sass/styles.scss */
 h2 {
   font-size: 19px;
   border: none;
   color: #000;
   padding-top: 15px;
-  /* --- "&" Parent Selector Exercise --- */ }
-  h2.exercise {
-    font-size: 16px;
-    border-top: 1px solid #666; }
+  /* --- "&" Parent Selector Exercise --- */
+}
+/* line 10, ../sass/styles.scss */
+h2.exercise {
+  font-size: 16px;
+  border-top: 1px solid #666;
+}
 
+/* line 16, ../sass/styles.scss */
 .title {
-  color: red; }
+  color: red;
+}
 
+/* line 19, ../sass/styles.scss */
 .content {
   background: #cccccc;
   border: 15px solid red;
@@ -30,30 +37,47 @@ h2 {
   border-radius: 22px;
   color: #666;
   padding: 20px;
-  /* --- Nesting Example Using Color Variables -- */ }
-  .content ul {
-    font-size: 16px;
-    color: purple; }
-    .content ul ul {
-      color: red; }
+  /* --- Nesting Example Using Color Variables -- */
+}
+/* line 28, ../sass/styles.scss */
+.content ul {
+  font-size: 16px;
+  color: purple;
+}
+/* line 32, ../sass/styles.scss */
+.content ul ul {
+  color: red;
+}
 
+/* line 38, ../sass/styles.scss */
 p {
   font-size: 1em;
-  /*--- Example Using Variables with "&" Parent Selectors --- */ }
-  p.small {
-    font-size: 10px; }
-  p.medium {
-    font-size: 17px; }
-  p.large {
-    font-size: 24px; }
+  /*--- Example Using Variables with "&" Parent Selectors --- */
+}
+/* line 42, ../sass/styles.scss */
+p.small {
+  font-size: 10px;
+}
+/* line 45, ../sass/styles.scss */
+p.medium {
+  font-size: 17px;
+}
+/* line 48, ../sass/styles.scss */
+p.large {
+  font-size: 24px;
+}
 
+/* line 53, ../sass/styles.scss */
 .green {
   background-color: lime;
   padding: 20px;
   margin-top: 30px;
   border: 5px solid green;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
+/* line 57, ../sass/styles.scss */
 .white {
   background: rgba(255, 255, 255, 0.9);
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+}
